@@ -26,6 +26,19 @@ Welcome to Formation-Absent! We're thrilled that you're interested in contributi
     git remote add upstream https://github.com/GameSphere-MultiPlayer/Formation-Absent.git
     ```
 
+2. Check the remotes for this repository.
+
+    ```
+    git remote -v
+    ```
+
+3. Always take a pull from the upstream repository to your master branch to keep it at par with the main project (updated 
+   repository).
+
+    ```
+    git pull upstream main
+    ```
+
 ### Creating a New Branch
 
 1. Create a new branch for your changes by running the following command in your terminal:
