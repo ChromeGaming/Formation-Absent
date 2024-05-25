@@ -160,3 +160,54 @@ button {
     width:100%;
     height:100%;
 }
+
+.footer {
+		text-align: center;
+	    position: relative;
+	    bottom: 0;
+	    width: 100%;
+	}
+
+	.footer .container {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    flex-wrap: wrap;
+	}
+
+		.footer p {
+		    margin: 0;
+		}
+
+		.footer .social-icons {
+		    display: flex;
+		    align-items: flex-start;
+            margin-left: 10px;
+		}
+
+		.footer .social-icons a {
+		    margin-bottom: 10px ;
+            margin-left: 10px;
+		    display: inline-block;
+		}
+
+		.footer .social-icons img {
+		    width: 25px;
+		    height: 25px;
+		    transition: transform 0.3s;
+		}
+
+		.footer .social-icons img:hover {
+		    transform: scale(1.2);
+		}
+
+		@media (max-width: 400px) {
+		    .footer .container {
+		        flex-direction: column;
+		    }
+
+		    .footer .social-icons {
+		        margin-top: 10px;
+		    }
+		}
+

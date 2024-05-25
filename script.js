@@ -2,7 +2,9 @@ var title = document.title;
 var bottomTxt = document.getElementById("bt"),
     messbtn = document.getElementById("messbtn"),
     levelsbtns = document.getElementById("levelsbtns"),
-    logo = document.getElementById("logo");
+    logo = document.getElementById("logo"),
+    footer=document.getElementById("footer");
+
 
 var containerWidth, containerHeight,
     width, height, x, y, w, h, testLevel, 
@@ -609,6 +611,7 @@ function startGame(id, _c){//console.log((id)?"continue game":"start game", id, 
     killAll(messtxt);
     killAll(copy);
     killAll(author);
+    killAll(footer);
     showClose();
     if(levelsbtns) killAll(levelsbtns);
     TweenFX.to(titlediv, anim, {alpha:0});
