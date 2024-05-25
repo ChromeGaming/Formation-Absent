@@ -32,3 +32,4 @@ body:
       options:
         - label: I follow [CONTRIBUTING GUIDELINE]() of this project.
           required: true
+          

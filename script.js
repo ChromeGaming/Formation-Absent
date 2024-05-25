@@ -5,6 +5,7 @@ var bottomTxt = document.getElementById("bt"),
     logo = document.getElementById("logo"),
     footer=document.getElementById("footer");
 
+
 var containerWidth, containerHeight,
     width, height, x, y, w, h, testLevel, 
     online, sound = -1, buttons, buttonWidth, buttonHeight, ratioY, ratioX;
