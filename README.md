@@ -18,9 +18,9 @@
 
 
 # About Our Project 💻
+
 <div align="center">
     <a name="about"></a>
-
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
 <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
@@ -39,10 +39,12 @@
   </div>
   
 # Overview
+
 <a a="overview"></a>
   Formation Absent is a turn-based puzzle game that simulates a battle between two armies. In each of the 13 stages, the player takes control of the Green army and must restore their lost battle formation by strategically moving units across the battlefield. The objective is to reorganize the Green army's units in order to defeat the opposing force. The game presents an abstract representation of a military conflict, challenging the player to think tactically and make decisions that will lead their side to victory.
 
 ## Technology Used
+
 <a name="tech-stack"></a>
 <p>
  <a href="https://www.w3schools.com/html/"> <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" alt="HTML" /></a>
