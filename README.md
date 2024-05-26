@@ -1,7 +1,26 @@
+# <p align="center">GameSphere-Multiplayer</p>
 ![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
+
+<div id="top"></div>
+<h2>Table of Contents</h2>
+
+- [About Our Project](#about)
+- [Overview](#overview)
+- [Technology Used](#tech-stack)
+  - [Frontend Technologies](#frontend-technologies)
+  - [Backend Technologies](#backend-technologies)
+  - [Real-Time Communication](#real-time-communication)
+- [How to make a PR in a Project](how-to-make-a-pr-in-a-project)
+- [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
+  <br>
+
+
+
 
 # About Our Project 💻
 <div align="center">
+    <a name="about"></a>
+
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
 <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
@@ -18,9 +37,46 @@
   <img src="https://img.shields.io/github/contributors/GameSphere-MultiPlayer/Formation-Absent?style=for-the-badge" />
   <img src="https://img.shields.io/github/last-commit/GameSphere-MultiPlayer/Formation-Absent?style=for-the-badge" />
   </div>
+  
+# Overview
+<a a="overview"></a>
+  Formation Absent is a turn-based puzzle game that simulates a battle between two armies. In each of the 13 stages, the player takes control of the Green army and must restore their lost battle formation by strategically moving units across the battlefield. The objective is to reorganize the Green army's units in order to defeat the opposing force. The game presents an abstract representation of a military conflict, challenging the player to think tactically and make decisions that will lead their side to victory.
 
-  # How to make a PR in a Project 🟢
+## Technology Used
+<a name="tech-stack"></a>
+<p>
+ <a href="https://www.w3schools.com/html/"> <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" alt="HTML" /></a>
+  <a href="https://www.w3schools.com/css/"> <img src="https://img.icons8.com/color/70/000000/css3.png" alt="CSS" /></a>
+  <a href="https://www.w3schools.com/js/"><img src="https://img.icons8.com/color/70/000000/javascript--v1.png" alt="JS" /></a>
+  <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"> <img src="https://img.icons8.com/color/70/000000/bootstrap.png" alt="Bootstrap" /></a>
+  <a href="https://www.w3schools.com/jquery/default.asp"> <img src="https://w7.pngwing.com/pngs/720/46/png-transparent-jquery-plain-wordmark-logo-icon-thumbnail.png" alt="jQuery" width="70" height="70"/></a> 
+  <a href="[https://dev.mysql.com/doc/](https://laravel.com/docs/11.x/readme)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel" width="70" height="70"/></a>
+  <a href="https://dev.mysql.com/doc/"> <img src="https://brandslogos.com/wp-content/uploads/thumbs/mysql-logo-1.png" alt="MySql" width="70" height="70"/></a>
+  <a href="https://www.php.net/docs.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="PHP" width="70" height="70"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"> <img src="https://static-00.iconduck.com/assets.00/websocket-icon-512x384-sm7dfowk.png" alt="WebSocket" width="70" height="70"/></a>
+  
 
+### Frontend Technologies
+<a front="frontend-technologies"></a>
+  - HTML
+  - CSS
+  - JavaScript
+  - Bootstrap
+  - jQuery
+
+### Backend Technologies
+<a d="backend-technologie"></a>
+ - Laravel (PHP framework)
+ - MySQL (database)
+ - PHP
+### Real-Time Communication
+<a e="real-time-communication"></a>
+ - WebSocket
+</p>
+ <p align="right">(<a href="#top">back to top</a>)</p>
+
+# How to make a PR in a Project 🟢
+<a g="how-to-make-a-pr-in-a-project"></a>
 If you are interested to contribute in this project how to start contribute
 <!-- in detail -->
 
@@ -70,10 +126,10 @@ To push your changes, run the following command in your terminal:
     ```
 
 9. Create a PR.
-
-__________________________________________________________________________________________________________________________________________________________________
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Alternatively Using GitHub Desktop
+<a r="alternatively-using-github-desktop"></a>
 
 1. Open GitHub Desktop and log in to your GitHub account.
 
@@ -92,3 +148,9 @@ ________________________________________________________________________________
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
 **Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+
+The best way to learn is to do.<br>
+ Happy Contributions !! 
+ 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
