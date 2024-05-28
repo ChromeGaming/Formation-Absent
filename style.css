@@ -113,8 +113,24 @@ div, button {
     background-color: #06d;
     border-color:#08f #059 #047 #08d;
 }
-
-
+/* footer section  */
+.foot{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:30px;
+    background-color:#090;
+    border:solid 5px;
+    border-color:#2c2 #070 #060 #2b2;
+    color:white;
+    padding-top: 1px;
+}
+.foot:hover{
+    background-color:#00c300;
+    border-color:#0f0 #080 #070 #0d0;
+}
 
 :focus { outline:none;}
 
