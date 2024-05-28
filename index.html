@@ -2,31 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Formation Absent</title>
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>Formation Absent</title>
+
 	<meta name="description" content="Formation Absent is turn-based puzzler made for js13k games competition 2017" />
 	<meta name="keywords" content="game, javascript, js, html5, puzzle, strategy, tactic" />
-	
+
 	<meta name="author" content="Noncho Savov" />
 	<meta name="copyright" content="Copyright © 2017 by Noncho Savov. All Rights Reserved." />
 	<meta name="application-name" content="Formation Absent" />
-	
+
 	<meta property="og:title" content="Formation Absent by FoumartGames" />
 	<meta property="og:type" content="article" />
 	<meta property="og:image" content="http://www.foumartgames.com/games/FormationAbsent/animated_preview.gif" />
 	<meta property="og:image:width" content="225" />
 	<meta property="og:image:height" content="225" />
 	<meta property="og:url" content="http://www.foumartgames.com/games/FormationAbsent/" />
-	<meta property="og:description" content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
-	
+	<meta property="og:description"
+		content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
+
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Formation Absent by FoumartGames" />
-	<meta name="twitter:description" content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
+	<meta name="twitter:description"
+		content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
 	<meta name="twitter:image" content="http://www.foumartgames.com/games/FormationAbsent/icon.png" />
 	<link rel="stylesheet" href="style.css">
-	
+
 	<!--<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,8 +38,8 @@
 		ga('create', 'UA-41782328-9', 'auto');
 		ga('send', 'pageview');
 	</script>-->
-	<link rel="icon" href="./favicon.png" type="image/png"/>
-	
+	<link rel="icon" href="./favicon.png" type="image/png" />
+
 </head>
 
 <body>
@@ -57,52 +59,55 @@
 				<button class="b m i pad" onClick="messSelect(101)" style="bottom:18%">
 					<div id="versusbtn" class="bt"></div>
 				</button>
-				<button class="r m i" onDblClick="messSelect(102)" style="bottom:7%"><div id="multibtn" class="bt"></div></button>
+				<button class="r m i" onDblClick="messSelect(102)" style="bottom:7%">
+					<div id="multibtn" class="bt"></div>
+				</button>
 			</div>
 			<div id="fade" class="c mess"></div>
 			<div id="mess" class="c mess l">
 				<div id="messtxt" class="c"></div>
-				<button class="g" onClick="proceedClick();" style="bottom:6px; right:6px;"><div id="messbtn" style="position:relative;"></div></button>
+				<button class="g" onClick="proceedClick();" style="bottom:6px; right:6px;">
+					<div id="messbtn" style="position:relative;"></div>
+				</button>
 			</div>
 		</div>
-		
+
 		<div class="u b" style="height:26px"></div>
-		
-		<div class="u g bs">
-		<footer class="footer" id="footer">
-			Copyright &copy; 2024 by Chrome gaming. All Rights Reserved.
-		<div class="container">
-			
-			<div class="social-icons">
-				Contact:
-	            <a href="https://www.facebook.com/profile.php?id=61558763492008" target="_blank">
-	                <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" />
-	            </a>
-	            </a>
-	            <a href="https://www.instagram.com/chromegamingon/" target="_blank">
-	                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
-	            </a>
-	            <a href="https://www.linkedin.com/company/chromegaming" target="_blank">
-	                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
-	            </a>
-	            <a href="https://www.youtube.com/@ChromeGamingOn" target="_blank">
-	                <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="youtube" />
-	            </a>
-	        </div>
-		<div>	
-		</footer>
-			<div id="bt" class="c" ></div>
-		</div>
+
+		<div id="bt" class="c"></div>
 		
 		<div id="copy" class="a" style="left:18px;"></div>
 		<div id="author" class="a" style="right:18px;"></div>
-		
-		<button id="closediv" onClick="closeGame()" class="r m i x"><div id="closebtn"></div></button>
+		<button id="closediv" onClick="closeGame()" class="r m i x">
+			<div id="closebtn"></div>
+		</button>
 	</div>
+	<div class="foot">
+		<footer class="footer" id="footer">
+			Copyright &copy; 2024 by Chrome gaming. All Rights Reserved.
+			<div class="container">
 	
-    <script src="script.js"></script>	
+				<div class="social-icons">
+					Contact:
+					<a href="https://www.facebook.com/profile.php?id=61558763492008" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" />
+					</a>
+					<a href="https://www.instagram.com/chromegamingon/" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+					</a>
+					<a href="https://www.linkedin.com/company/chromegaming" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
+					</a>
+					<a href="https://www.youtube.com/@ChromeGamingOn" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="youtube" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="script.js"></script>
 
-</div>
+	</div>
 
 </body>
 
