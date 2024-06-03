@@ -18,6 +18,11 @@ div, button {
     height:100%;
 }
 
+#bt{
+    position: relative;
+    top: 50px;
+}
+
 #frame{
     width:100%;
     min-width:960px;
