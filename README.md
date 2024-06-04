@@ -1,5 +1,8 @@
-# <p align="center">GameSphere-Multiplayer</p>
-![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
+# <p align="center">ChromeGaming Formation-Absent</p>
+
+![formation](https://github.com/ChromeGaming/Formation-Absent/assets/133582566/ccac5005-45f4-40db-8528-ca17619c4314)
+
+<hr>
 
 <div id="top"></div>
 <h2>Table of Contents</h2>
@@ -14,8 +17,7 @@
 - [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
   <br>
 
-
-
+<hr>
 
 # About Our Project 💻
 
@@ -153,6 +155,59 @@ To push your changes, run the following command in your terminal:
 
 The best way to learn is to do.<br>
  Happy Contributions !! 
+
+ <hr>
+
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
+  </div>
+
+ This project is part of GirlScript Summer of Code. We enthusiastically welcome community contributions.Your active involvement is vital to our success!
+
+![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
+
+<hr>
+
+<!-- Code of conduct -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+</div>
+
+Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+<hr>
+
+<!-- License -->
+
+<div>
+
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="35" height="35"> License</h2>
+
+</div>
+
+This project is licensed under the [MIT License](./LICENSE).
+
+<hr>
+
+ <!-- Cotributors -->
+
+<div>
+
+  <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors</h2>
+
+</div>
+
+
+Thank you for your invaluable support! Your contributions are crucial in advancing ChromeGaming Formation-Absent and propelling our project forward. 😊
+<center>
+
+<a href="https://github.com/ChromeGaming/Formation-Absent/graphs/contributors">
+
+  <img src="https://contrib.rocks/image?repo=ChromeGaming/Formation-Absent"/>
+
+</a>
+
+</center>
  
 <p align="right">(<a href="#top">back to top</a>)</p>
-
