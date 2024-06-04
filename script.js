@@ -1659,5 +1659,10 @@ var TypeFX = (function() {
     }
 })();
 
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+      document.querySelector("body").classList.add("loaded");
+  }, 500)
+});
 
 var TweenFX=function(){function t(t,i,s,p,a){function u(){if(!n){for(m+=1,c=0;c<g.length;c++)g[c].start==g[c].end?h=g[c].end:(f=g[c].start>g[c].end?g[c].end+(g[c].start-g[c].end)/i*(i-m):g[c].start-(g[c].start-g[c].end)/i*m,h=m>=i?g[c].end:f),g[c].property!=r[1]&&(h+="px"),r.indexOf(g[c].property)>-1&&(t.style[g[c].property]=h);if(m>=i)return"0"==t.style.opacity&&(t.style.visibility="hidden"),d(t),void(p&&p.apply(this,a))}(c=l.indexOf(t))>-1&&(o[c]=requestAnimationFrame(u))}function y(t){return t?l.indexOf(t):l.length}function d(t,e){return t&&(e=y(t)),e>-1&&(cancelAnimationFrame(o.splice(e,1)),l.splice(e,1)),e}var c,f,h,m=0,g=[];for(f in s)r.indexOf(f)>-1&&((h="x"==f?r[2]:"y"==f?r[3]:f==r[0]?r[1]:f)==r[1]&&s[f]>0&&("hidden"==t.style.visibility&&(t.style.opacity="0"),t.style.visibility="visible"),g.push({property:h,start:e(t,h),end:s[f]}));d(t),g.length&&(o.push(requestAnimationFrame(u)),l.push(t))}function e(t,e){return 1*(window.getComputedStyle(t,null).getPropertyValue(e).match(i)||[0]).map(function(t){return 1*t})}var n,i=/[+-]?\d+(\.\d+)?/g,r=["alpha","opacity","left",up,"right","bottom","width","height","x","y"],l=[],o=[];return{to:function(e,n,i,r){t(e,n,i,r,Array.apply(null,arguments).slice(4))},pause:function(t){return arguments.length?(t||!1===t)&&(n=t):n=!n,n},stop:function(t){-1==stopTween(t)&&removeAllTweens()},tweenedElements:l,getStyle:e}}();
