@@ -21,7 +21,10 @@
 	<meta property="og:url" content="http://www.foumartgames.com/games/FormationAbsent/" />
 	<meta property="og:description"
 		content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
-
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	  />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Formation Absent by FoumartGames" />
 	<meta name="twitter:description"
@@ -55,6 +58,110 @@
 			<div id="titlediv" class="c">
 				<div id="logo" style="top:12%;left:50%;margin-left:-225px;"></div>
 				<div id="levelsbtns" class="c"></div>
+				<button id="CommentBtn" aria-label="Toggle Comment Form"><i class="fas fa-comment"></i></button>
+				<!-- Comment form -->
+			
+				<!-- Modal background -->
+				<div id="modalBackground">
+				  <!-- Comment form -->
+				  <div id="commentForm">
+					<form id="feedback-form">
+					  <label for="userComment" style="color: rgb(229, 230, 239);">Your Feedback:</label>
+					  <div class="form-group">
+						<div class="icon" >
+						  <i class="fas fa-user"></i>
+						</div>
+						<input type="text" id="name" onfocus="changeColor()" placeholder="Your Name" name="name" required style="
+						width: 250px;
+					">
+					  </div>
+					  <div class="form-group">
+						<div class="icon">
+						  <i class="fas fa-envelope"></i>
+						</div>
+						<input type="email" id="email" onfocus="changeColor()" placeholder="Email Id" required style="
+						width: 250px;
+					">
+					  </div>
+					  <div class="form-group">
+						<textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+					  </div>
+					  <div class="rating">
+						<h2>Rate us:</h2>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+					  </div>
+					  <button id="ll" style="color: blue;">Submit</button>
+					</form>
+				  </div>
+				</div>
+			
+				<script>
+				   const ratingStars = [...document.getElementsByClassName("rating__star")];
+			
+			function executeRating(stars) {
+			  const starClassActive = "rating__star fas fa-star";
+			  const starClassInactive = "rating__star far fa-star";
+			  const starsLength = stars.length;
+			  let i;
+			  stars.map((star) => {
+				star.onclick = () => {
+				  i = stars.indexOf(star);
+			
+				  if (star.className===starClassInactive) {
+					for (i; i >= 0; --i) stars[i].className = starClassActive;
+				  } else {
+					for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+				  }
+				};
+			  });
+			}
+			executeRating(ratingStars);
+			  
+			 
+				  const ratingInputs = document.querySelectorAll('input[name="rating"]');
+			  ratingInputs.forEach((input) => {
+				input.addEventListener("click", function() {
+				  const value = parseInt(input.value);
+				  for (let i = 1; i <= value; i++) {
+					document.getElementById(`star${i}`).checked = true;
+				  }
+				  for (let i = value + 1; i <= 5; i++) {
+					document.getElementById(`star${i}`).checked = false;
+				  }
+				});
+			  });
+				  document.getElementById("CommentBtn").addEventListener("click", function () {
+					document.getElementById("modalBackground").style.display = "flex";
+				  });
+				 
+				  // Close the form when clicking outside of it (optional)
+				  document.getElementById("modalBackground").addEventListener("click", function (event) {
+					if (event.target === this) {
+					  this.style.display = "none";
+					}
+				  });
+				  let commentForm = document.getElementById("commentForm");
+			let modalBackground = document.getElementById("modalBackground");
+			
+			document.getElementById("CommentBtn").addEventListener("click", function(event) {
+			  if (commentForm.style.display === "none") {
+				commentForm.style.display = "block";
+				modalBackground.style.display = "flex";
+			  } else {
+				commentForm.style.display = "none";
+				modalBackground.style.display = "none";
+			  }
+			});
+			
+			document.getElementById("ll").addEventListener("click", function(event) {
+			  commentForm.style.display = "none";
+			  modalBackground.style.display = "none";
+			});
+				</script>
 				<button class="y bb i" onClick="messSelect(103)" style="bottom:7%;left:15px;">
 					<div id="soundbtn" style="position:relative; right:10px;"></div>
 				</button>
