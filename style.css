@@ -239,6 +239,10 @@ button {
 .icon a {
   margin-left: 1px;
   color: rgb(26, 122, 11);
+  opacity: 0.5;
+}
+.icon a:hover {
+  opacity: 2;
 }
 img {
   height: 1.5rem;
