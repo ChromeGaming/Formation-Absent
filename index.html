@@ -21,10 +21,7 @@
 	<meta property="og:url" content="http://www.foumartgames.com/games/FormationAbsent/" />
 	<meta property="og:description"
 		content="Formation Absent is turn-based puzzler made for js13k games competition 2017." />
-		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-	  />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Formation Absent by FoumartGames" />
 	<meta name="twitter:description"
@@ -43,13 +40,26 @@
 	</script>-->
 	<link rel="icon" href="./favicon.png" type="image/png" />
 	<script src="mouseEffect.js"></script>
-  <link rel="stylesheet" href="mouseEffect.css">
+	<link rel="stylesheet" href="mouseEffect.css">
+
 
 </head>
 
 <body>
+	<!-- HTML -->
+	<!-- HTML -->
+	<div class="loader-container">
+
+	</div>
 	<div id="loader-wrapper">
-		<div id="loader"></div>
+		<div id="loader">
+			<div class="loader-spinner">
+				<svg viewBox="0 0 100 100">
+					<circle cx="50" cy="50" r="40" />
+				</svg>
+			</div>
+		</div>
+
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div>
@@ -62,107 +72,109 @@
 				<div id="levelsbtns" class="c"></div>
 				<button id="CommentBtn" aria-label="Toggle Comment Form"><i class="fas fa-comment"></i></button>
 				<!-- Comment form -->
-			
+
 				<!-- Modal background -->
 				<div id="modalBackground">
-				  <!-- Comment form -->
-				  <div id="commentForm">
-					<form id="feedback-form">
-					  <label for="userComment" style="color: rgb(229, 230, 239);">Your Feedback:</label>
-					  <div class="form-group">
-						<div class="icon" >
-						  <i class="fas fa-user"></i>
-						</div>
-						<input type="text" id="name" onfocus="changeColor()" placeholder="Your Name" name="name" required style="
+					<!-- Comment form -->
+					<div id="commentForm">
+						<form id="feedback-form">
+							<label for="userComment" style="color: rgb(229, 230, 239);">Your Feedback:</label>
+							<div class="form-group">
+								<div class="icon">
+									<i class="fas fa-user"></i>
+								</div>
+								<input type="text" id="name" onfocus="changeColor()" placeholder="Your Name" name="name"
+									required style="
 						width: 250px;
 					">
-					  </div>
-					  <div class="form-group">
-						<div class="icon">
-						  <i class="fas fa-envelope"></i>
-						</div>
-						<input type="email" id="email" onfocus="changeColor()" placeholder="Email Id" required style="
+							</div>
+							<div class="form-group">
+								<div class="icon">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<input type="email" id="email" onfocus="changeColor()" placeholder="Email Id" required
+									style="
 						width: 250px;
 					">
-					  </div>
-					  <div class="form-group">
-						<textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
-					  </div>
-					  <div class="rating">
-						<h2>Rate us:</h2>
-						<i class="rating__star far fa-star"></i>
-						<i class="rating__star far fa-star"></i>
-						<i class="rating__star far fa-star"></i>
-						<i class="rating__star far fa-star"></i>
-						<i class="rating__star far fa-star"></i>
-					  </div>
-					  <button id="ll" style="color: blue;">Submit</button>
-					</form>
-				  </div>
+							</div>
+							<div class="form-group">
+								<textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+							</div>
+							<div class="rating">
+								<h2>Rate us:</h2>
+								<i class="rating__star far fa-star"></i>
+								<i class="rating__star far fa-star"></i>
+								<i class="rating__star far fa-star"></i>
+								<i class="rating__star far fa-star"></i>
+								<i class="rating__star far fa-star"></i>
+							</div>
+							<button id="ll" style="color: blue;">Submit</button>
+						</form>
+					</div>
 				</div>
-			
+
 				<script>
-				   const ratingStars = [...document.getElementsByClassName("rating__star")];
-			
-			function executeRating(stars) {
-			  const starClassActive = "rating__star fas fa-star";
-			  const starClassInactive = "rating__star far fa-star";
-			  const starsLength = stars.length;
-			  let i;
-			  stars.map((star) => {
-				star.onclick = () => {
-				  i = stars.indexOf(star);
-			
-				  if (star.className===starClassInactive) {
-					for (i; i >= 0; --i) stars[i].className = starClassActive;
-				  } else {
-					for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
-				  }
-				};
-			  });
-			}
-			executeRating(ratingStars);
-			  
-			 
-				  const ratingInputs = document.querySelectorAll('input[name="rating"]');
-			  ratingInputs.forEach((input) => {
-				input.addEventListener("click", function() {
-				  const value = parseInt(input.value);
-				  for (let i = 1; i <= value; i++) {
-					document.getElementById(`star${i}`).checked = true;
-				  }
-				  for (let i = value + 1; i <= 5; i++) {
-					document.getElementById(`star${i}`).checked = false;
-				  }
-				});
-			  });
-				  document.getElementById("CommentBtn").addEventListener("click", function () {
-					document.getElementById("modalBackground").style.display = "flex";
-				  });
-				 
-				  // Close the form when clicking outside of it (optional)
-				  document.getElementById("modalBackground").addEventListener("click", function (event) {
-					if (event.target === this) {
-					  this.style.display = "none";
+					const ratingStars = [...document.getElementsByClassName("rating__star")];
+
+					function executeRating(stars) {
+						const starClassActive = "rating__star fas fa-star";
+						const starClassInactive = "rating__star far fa-star";
+						const starsLength = stars.length;
+						let i;
+						stars.map((star) => {
+							star.onclick = () => {
+								i = stars.indexOf(star);
+
+								if (star.className === starClassInactive) {
+									for (i; i >= 0; --i) stars[i].className = starClassActive;
+								} else {
+									for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+								}
+							};
+						});
 					}
-				  });
-				  let commentForm = document.getElementById("commentForm");
-			let modalBackground = document.getElementById("modalBackground");
-			
-			document.getElementById("CommentBtn").addEventListener("click", function(event) {
-			  if (commentForm.style.display === "none") {
-				commentForm.style.display = "block";
-				modalBackground.style.display = "flex";
-			  } else {
-				commentForm.style.display = "none";
-				modalBackground.style.display = "none";
-			  }
-			});
-			
-			document.getElementById("ll").addEventListener("click", function(event) {
-			  commentForm.style.display = "none";
-			  modalBackground.style.display = "none";
-			});
+					executeRating(ratingStars);
+
+
+					const ratingInputs = document.querySelectorAll('input[name="rating"]');
+					ratingInputs.forEach((input) => {
+						input.addEventListener("click", function () {
+							const value = parseInt(input.value);
+							for (let i = 1; i <= value; i++) {
+								document.getElementById(`star${i}`).checked = true;
+							}
+							for (let i = value + 1; i <= 5; i++) {
+								document.getElementById(`star${i}`).checked = false;
+							}
+						});
+					});
+					document.getElementById("CommentBtn").addEventListener("click", function () {
+						document.getElementById("modalBackground").style.display = "flex";
+					});
+
+					// Close the form when clicking outside of it (optional)
+					document.getElementById("modalBackground").addEventListener("click", function (event) {
+						if (event.target === this) {
+							this.style.display = "none";
+						}
+					});
+					let commentForm = document.getElementById("commentForm");
+					let modalBackground = document.getElementById("modalBackground");
+
+					document.getElementById("CommentBtn").addEventListener("click", function (event) {
+						if (commentForm.style.display === "none") {
+							commentForm.style.display = "block";
+							modalBackground.style.display = "flex";
+						} else {
+							commentForm.style.display = "none";
+							modalBackground.style.display = "none";
+						}
+					});
+
+					document.getElementById("ll").addEventListener("click", function (event) {
+						commentForm.style.display = "none";
+						modalBackground.style.display = "none";
+					});
 				</script>
 				<button class="y bb i" onClick="messSelect(103)" style="bottom:7%;left:15px;">
 					<div id="soundbtn" style="position:relative; right:10px;"></div>
@@ -189,44 +201,44 @@
 		<div class="u b" style="height:26px"></div>
 
 		<div id="bt" class="c"></div>
-		
+
 		<div id="copy" class="a" style="left:18px;"></div>
 		<div id="author" class="a" style="right:18px;"></div>
 		<button id="closediv" onClick="closeGame()" class="r m i x">
 			<div id="closebtn"></div>
 		</button>
 	</div>
-    <footer class="footer">
-      <div class="footerContainer"> 
-		 <div class="socialIcons">
-			<div class="text">
-				<a>Contact:</a>
-			</div>
-			<div class="icon">
-				<a href="https://www.facebook.com/profile.php?id=61558763492008" target="_blank">
-					<img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" />
-				</a>
-				<a href="https://www.instagram.com/chromegamingon/" target="_blank">
-					<img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
-				</a>
-				<a href="https://www.linkedin.com/company/chromegaming" target="_blank">
-					<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
-				</a>
-				<a href="https://www.youtube.com/@ChromeGamingOn" target="_blank">
-					<img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="youtube" />
-				</a>
-				<a href="https://discord.com/invite/rZb46cCMmK" target="_blank">
-					<img src="https://img.icons8.com/ios-filled/50/000000/discord.png" alt="discord" />
-				</a>
-			</div>
-			
-			
-		</div>
-		<div class="copyrightTx">Copyright &copy; 2024 by Chrome gaming. All Rights Reserved.</div>
-      </div>
-	   </footer>
+	<footer class="footer">
+		<div class="footerContainer">
+			<div class="socialIcons">
+				<div class="text">
+					<a>Contact:</a>
+				</div>
+				<div class="icon">
+					<a href="https://www.facebook.com/profile.php?id=61558763492008" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" />
+					</a>
+					<a href="https://www.instagram.com/chromegamingon/" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+					</a>
+					<a href="https://www.linkedin.com/company/chromegaming" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
+					</a>
+					<a href="https://www.youtube.com/@ChromeGamingOn" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="youtube" />
+					</a>
+					<a href="https://discord.com/invite/rZb46cCMmK" target="_blank">
+						<img src="https://img.icons8.com/ios-filled/50/000000/discord.png" alt="discord" />
+					</a>
+				</div>
 
-		<!-- <footer class="footer" id="footer">
+
+			</div>
+			<div class="copyrightTx">Copyright &copy; 2024 by Chrome gaming. All Rights Reserved.</div>
+		</div>
+	</footer>
+
+	<!-- <footer class="footer" id="footer">
 			Copyright &copy; 2024 by Chrome gaming. All Rights Reserved.
 			<div class="container">
 	
