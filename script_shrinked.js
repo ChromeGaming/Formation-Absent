@@ -1,7 +1,7 @@
 var h = document.getElementById("messbtn"),
   ca, da, k, m, ea, n, p = -1,
-  q,r,t,u,v,w = 0,y = 0,ia = 0,
-  z = "allies",A = 0,B,ja,ka,D,E = 5,
+  q, r, t, u, v, w = 0, y = 0, ia = 0,
+  z = "allies", A = 0, B, ja, ka, D, E = 5,
   F = 0,
   ma = 0,
   G = -1,
@@ -53,13 +53,13 @@ function za() {
           1 < a.length
             ? ((a = parseInt(a.substring(1))),
               0 < d &&
-                (a > b && (b = a),
+              (a > b && (b = a),
                 (O[a] = e),
                 (B[a] = parseInt(e.substr(2, 2), 16)),
                 (ja[a] = parseInt(e.substr(4), 16)),
                 -1 == O[a + 1] && parseInt(O[a]) && (O[a + 1] = 0)))
             : (Number(e) > d &&
-                ((ea = 6 == Math.round(10 * (Number(e) - d))),
+              ((ea = 6 == Math.round(10 * (Number(e) - d))),
                 (c = !0),
                 Q("l", d)),
               d && (b = d));
@@ -67,9 +67,9 @@ function za() {
         case "s":
           1 < a.length &&
             ((a = parseInt(a.substring(1))),
-            (M[a] = ya(e)),
-            (N[a] = Aa(e, N[a - 1])),
-            (O[a] = -1));
+              (M[a] = ya(e)),
+              (N[a] = Aa(e, N[a - 1])),
+              (O[a] = -1));
           break;
         case "a":
           E = parseInt(e);
@@ -171,22 +171,22 @@ function Ia(b) {
 function FS() {
   var a = document.documentElement;
   document.fullscreenElement ||
-  document.webkitFullscreenElement ||
-  document.mozFullScreenElement ||
-  document.msFullscreenElement
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement
     ? document.exitFullscreen
       ? document.exitFullscreen()
       : document.mozCancelFullScreen
-      ? document.mozCancelFullScreen()
-      : document.webkitCancelFullScreen
-      ? document.webkitCancelFullScreen()
-      : document.msExitFullscreen && document.msExitFullscreen()
+        ? document.mozCancelFullScreen()
+        : document.webkitCancelFullScreen
+          ? document.webkitCancelFullScreen()
+          : document.msExitFullscreen && document.msExitFullscreen()
     : (
-        a.requestFullscreen ||
-        a.mozRequestFullScreen ||
-        a.webkitRequestFullScreen ||
-        a.msRequestFullscreen
-      ).call(a);
+      a.requestFullscreen ||
+      a.mozRequestFullScreen ||
+      a.webkitRequestFullScreen ||
+      a.msRequestFullscreen
+    ).call(a);
 }
 function qa(b) {
   ca = container.offsetWidth;
@@ -229,23 +229,23 @@ function qa(b) {
           height: window.innerHeight,
         }))
     : 1 > u
-    ? 1 > v
-      ? (V(frame, v < u ? u : v, "", u),
-        T.b(frame, 0, { x: c, y: 0, height: window.innerHeight * u }))
-      : (V(frame, 1, "", u),
+      ? 1 > v
+        ? (V(frame, v < u ? u : v, "", u),
+          T.b(frame, 0, { x: c, y: 0, height: window.innerHeight * u }))
+        : (V(frame, 1, "", u),
+          T.b(frame, 0, {
+            x: 0,
+            y: 0,
+            width: window.innerWidth,
+            height: window.innerHeight * u,
+          }))
+      : (V(frame, 1),
         T.b(frame, 0, {
           x: 0,
           y: 0,
           width: window.innerWidth,
-          height: window.innerHeight * u,
-        }))
-    : (V(frame, 1),
-      T.b(frame, 0, {
-        x: 0,
-        y: 0,
-        width: window.innerWidth,
-        height: window.innerHeight,
-      }));
+          height: window.innerHeight,
+        }));
   u = u > v ? (2 + (1.5 < u ? 1.5 : u) / v) / 3 : 1;
   1 > u && (u = 1);
   ba && V(ba, 1.25 > v ? (1 > v ? 0.8 + (1 - v) / 3 : 0.8 * v) : 1);
@@ -295,7 +295,7 @@ function Ma() {
   S.c(
     copy,
     "@ 2017 by Foumart|Games for||JS13K = 13.312|k zip, " +
-      (n ? location.search.length / 1e3 + "|k ram" : ""),
+    (n ? location.search.length / 1e3 + "|k ram" : ""),
     2,
     0,
     "#8c8"
@@ -330,30 +330,30 @@ function Ma() {
         (b.style.left = -90 + 232 * (i - 11) + "px"),
         (b.style.opacity = 0 < parseInt(O[i]) || (13 == i && n) ? 1 : 0.25))
       : (T.b(b, 0, {
-          x:
-            (10 > i ? 128 : 143) *
-            (8 > i
-              ? 4 > i
-                ? 2 == i
-                  ? 1
-                  : 0
-                : i - 3
-              : (12 > i ? i - 8 : 14 < i ? i - 16.1 : i - 12.9) +
-                (9 < i ? (11 >= i ? 0.25 : 1.9) : 0.4)),
-          width: 9 > i && 0 < i ? 120 : !i && 0 < parseInt(O[0]) ? 102 : 134,
-          height: 48,
-          alpha: 0 < parseInt(O[i]) ? 0.75 : -1 < O[i] ? 0.4 : n ? 0.1 : 0.2,
-        }),
+        x:
+          (10 > i ? 128 : 143) *
+          (8 > i
+            ? 4 > i
+              ? 2 == i
+                ? 1
+                : 0
+              : i - 3
+            : (12 > i ? i - 8 : 14 < i ? i - 16.1 : i - 12.9) +
+            (9 < i ? (11 >= i ? 0.25 : 1.9) : 0.4)),
+        width: 9 > i && 0 < i ? 120 : !i && 0 < parseInt(O[0]) ? 102 : 134,
+        height: 48,
+        alpha: 0 < parseInt(O[i]) ? 0.75 : -1 < O[i] ? 0.4 : n ? 0.1 : 0.2,
+      }),
         (b.style.bottom =
           34 -
           8 *
-            (7 < i
-              ? 11 < i
-                ? 15 > i
-                  ? 3
-                  : 4
-                : 2
-              : 3 > i
+          (7 < i
+            ? 11 < i
+              ? 15 > i
+                ? 3
+                : 4
+              : 2
+            : 3 > i
               ? i
                 ? 0
                 : -1
@@ -364,11 +364,11 @@ function Ma() {
         S.c(
           b,
           [i ? "|stage" : "||tutorial", "| | | *  ", " | |*|* ", " ||***|"][
-            1 > O[i] ? 0 : parseInt(O[i])
+          1 > O[i] ? 0 : parseInt(O[i])
           ] +
-            "|" +
-            ((i || O[0]) && ((n && i) || i) ? i + 1 : "") +
-            " ",
+          "|" +
+          ((i || O[0]) && ((n && i) || i) ? i + 1 : "") +
+          " ",
           3,
           0,
           B[i] ? (B[i] <= N[i] ? "yellow" : "white") : "white"
@@ -562,8 +562,8 @@ function Wa(b, c, a) {
     d.className += g[4];
     "[" != a &&
       (g[0] && (d.style.borderColor = g[0]),
-      g[1] && (d.style.borderTopColor = g[1]),
-      g[2] && (d.style.borderBottomColor = g[2]));
+        g[1] && (d.style.borderTopColor = g[1]),
+        g[2] && (d.style.borderBottomColor = g[2]));
   }
   d.style.borderRadius = ca / (2 * k) + "px";
   if (2 == P[c][b] || 6 == P[c][b]) d.style.borderBottomLeftRadius = "0";
@@ -589,12 +589,12 @@ function Wa(b, c, a) {
     "[" == a
       ? "#fff"
       : "]" == a
-      ? "#fe9"
-      : ":" == a
-      ? "#fcd"
-      : ";" == a
-      ? "#fd6"
-      : "#fff"
+        ? "#fe9"
+        : ":" == a
+          ? "#fcd"
+          : ";" == a
+            ? "#fd6"
+            : "#fff"
   );
   V(a, 0.75);
   Xa(a);
@@ -627,7 +627,7 @@ function Da(b) {
       ma = G = 0;
       n &&
         (window.history.pushState("", "", location.pathname),
-        window.location.reload());
+          window.location.reload());
       Ga();
       break;
     case 101:
@@ -696,8 +696,8 @@ function Pa(b, c) {
   c
     ? Z(P, cb)
     : -1 == b
-    ? Z(P || db(M[13]))
-    : Y(function () {
+      ? Z(P || db(M[13]))
+      : Y(function () {
         -1 < b && Z(M[b - (b >= M.length ? 1 : 0)], b ? cb : eb);
       }, R());
 }
@@ -718,55 +718,55 @@ function gb() {
   try {
     var d = window.open.apply(this, b);
     d.addEventListener("load", d.focus, !1);
-  } catch (e) {}
+  } catch (e) { }
 }
 function Ka() {
   Qa();
   W(mess);
   -1 < h.id.indexOf("tw")
     ? (gb(
-        ca / 2,
-        da / 2,
-        "http://twitter.com/home?status=" +
-          encodeURIComponent(
-            ("tweet" == h.id
-              ? "Hey folks, try this unique stage in"
-              : "Cleared all " +
-                (14 < M.length ? M.length + " " : "") +
-                "stages in") +
-              " #FormationAbsent" +
-              ("tweet" != h.id
-                ? " (turns:" + parseInt(A / 2) + ", score:" + w + ")"
-                : "") +
-              "! A 13kb #puzzle for #js13k #js13kgames Play: " +
-              window.location.protocol +
-              "//" +
-              window.location.hostname +
-              window.location.pathname +
-              ("tweet" == h.id ? "?s13=" + ra.s13 + "&l=13.5" : "")
-          ),
-        "html",
-        "resizable=yes,scrollbars=no,left=0,top=0,screenX=0,screenY=0"
+      ca / 2,
+      da / 2,
+      "http://twitter.com/home?status=" +
+      encodeURIComponent(
+        ("tweet" == h.id
+          ? "Hey folks, try this unique stage in"
+          : "Cleared all " +
+          (14 < M.length ? M.length + " " : "") +
+          "stages in") +
+        " #FormationAbsent" +
+        ("tweet" != h.id
+          ? " (turns:" + parseInt(A / 2) + ", score:" + w + ")"
+          : "") +
+        "! A 13kb #puzzle for #js13k #js13kgames Play: " +
+        window.location.protocol +
+        "//" +
+        window.location.hostname +
+        window.location.pathname +
+        ("tweet" == h.id ? "?s13=" + ra.s13 + "&l=13.5" : "")
       ),
+      "html",
+      "resizable=yes,scrollbars=no,left=0,top=0,screenX=0,screenY=0"
+    ),
       Q("l" + G, O[G]),
       Q("l", G + 1),
       Da(0))
     : "restart" == h.id
-    ? ((y = ma = 0), (A = G ? N[G - 1] * 2 : A), Da(G + 5))
-    : "nextstage" == h.id
-    ? ((y = 0), n && hb(), Da(G + 5))
-    : "tobattle" == h.id && 2 < F
-    ? (U.x(),
-      T.b(mess, 2 * E, { alpha: 0 }, function () {
-        $a("\rAdvice`move down\rAllies may need help.\r", null, 3);
-        T.b(mess, 2 * E, { alpha: 0.95 }, function () {
-          bb();
-          W(q[K + 1][I].a, !0);
-          q[K + 1][I].g.style.opacity = q[K + 1][I].canvas.style.opacity = "1";
-          q[K + 1][I].a.style.backgroundColor = "#3b3";
-        });
-      }))
-    : Da(F + (100 > F && 3 != F ? 1 : 0));
+      ? ((y = ma = 0), (A = G ? N[G - 1] * 2 : A), Da(G + 5))
+      : "nextstage" == h.id
+        ? ((y = 0), n && hb(), Da(G + 5))
+        : "tobattle" == h.id && 2 < F
+          ? (U.x(),
+            T.b(mess, 2 * E, { alpha: 0 }, function () {
+              $a("\rAdvice`move down\rAllies may need help.\r", null, 3);
+              T.b(mess, 2 * E, { alpha: 0.95 }, function () {
+                bb();
+                W(q[K + 1][I].a, !0);
+                q[K + 1][I].g.style.opacity = q[K + 1][I].canvas.style.opacity = "1";
+                q[K + 1][I].a.style.backgroundColor = "#3b3";
+              });
+            }))
+          : Da(F + (100 > F && 3 != F ? 1 : 0));
 }
 function bb(b) {
   (b &&
@@ -776,10 +776,10 @@ function bb(b) {
       (Number(mess.style.opacity) && 400 > parseInt(mess.style.width)) ||
       "auto" == f.style.pointerEvents)) ||
     ((ka = !ka),
-    X(area),
-    Z(P, function () {
-      ka && (fb(I, K, 1), q[K][I].g.addEventListener("click", bb));
-    }));
+      X(area),
+      Z(P, function () {
+        ka && (fb(I, K, 1), q[K][I].g.addEventListener("click", bb));
+      }));
 }
 function Ya() {
   T.b(closebtn, 0, { x: -7, y: -7 });
@@ -852,10 +852,10 @@ function Ha(b) {
       for (_x = 0; _x < k; _x++)
         P[_y][_x]
           ? (c &&
-              ((b =
-                3 < c
-                  ? b + ("." + (c - 3).toString(16))
-                  : b + (3 == c ? "000" : 2 == c ? "00" : "0")),
+            ((b =
+              3 < c
+                ? b + ("." + (c - 3).toString(16))
+                : b + (3 == c ? "000" : 2 == c ? "00" : "0")),
               (c = 0)),
             (b += P[_y][_x]))
           : (c++, 17 < c && ((b += ".f"), (c = 0)));
@@ -871,14 +871,14 @@ function kb() {
   S.c(
     f,
     "    (|generator|)     Width||" +
-      (10 > k ? "0" : "") +
-      k +
-      "     Height||0" +
-      m +
-      "     Best||" +
-      (10 > xa ? "0" : "") +
-      xa +
-      "     CL    Test Level",
+    (10 > k ? "0" : "") +
+    k +
+    "     Height||0" +
+    m +
+    "     Best||" +
+    (10 > xa ? "0" : "") +
+    xa +
+    "     CL    Test Level",
     3
   );
 }
@@ -896,8 +896,8 @@ function Z(b, c) {
       1 == P[a][d]
         ? ((I = d), (K = a))
         : (4 == P[a][d]
-            ? ((na = d), oa++)
-            : 2 == P[a][d]
+          ? ((na = d), oa++)
+          : 2 == P[a][d]
             ? L++
             : (5 == P[a][d] || 6 == P[a][d]) && oa++,
           (3 < F || 9 < A || G) && e.g.addEventListener("click", bb));
@@ -972,27 +972,27 @@ function Z(b, c) {
                   ((a && d && 1 != P[a - 1][d - 1]) || !d) &&
                   ((1 < a && 1 != P[a - 2][d]) || 2 > a) &&
                   ((q[a - 1][d].a.className += " g"),
-                  (q[a - 1][d].a.style.opacity = "0.2"),
-                  !P[a - 1][d] &&
+                    (q[a - 1][d].a.style.opacity = "0.2"),
+                    !P[a - 1][d] &&
                     a &&
                     (S.f(q[a - 1][d].canvas, "^", 10),
-                    (q[a - 1][d].l.style.opacity = "0.2"))),
+                      (q[a - 1][d].l.style.opacity = "0.2"))),
                   (4 != P[a][d] && 5 != P[a][d]) ||
-                    !d ||
-                    (!P[a][d - 1] &&
-                      ((((1 != P[a][d - 2] && 1 < d) || 2 > d) &&
-                        ((1 != P[a - 1][d - 1] && d && a) || 1 > d || 1 > a) &&
-                        2 != P[a + 1][d] &&
-                        a) ||
-                        1 > a) &&
-                      ((q[a][d - 1].a.style.opacity = "0.2"),
+                  !d ||
+                  (!P[a][d - 1] &&
+                    ((((1 != P[a][d - 2] && 1 < d) || 2 > d) &&
+                      ((1 != P[a - 1][d - 1] && d && a) || 1 > d || 1 > a) &&
+                      2 != P[a + 1][d] &&
+                      a) ||
+                      1 > a) &&
+                    ((q[a][d - 1].a.style.opacity = "0.2"),
                       S.f(q[a][d - 1].canvas, "<", 10),
                       (q[a][d - 1].l.style.opacity = "0.2")),
                     2 != P[a][d - 1] &&
-                      d &&
-                      -1 == q[a][d - 1].a.className.indexOf("green") &&
-                      (q[a][d - 1].a.className += " r"));
-              } catch (l) {}
+                    d &&
+                    -1 == q[a][d - 1].a.className.indexOf("green") &&
+                    (q[a][d - 1].a.className += " r"));
+              } catch (l) { }
           q[K][I].a.style.borderRadius = "0";
           q[K][I].a.addEventListener("click", Ja);
           q[K][I].a.style.cursor = "pointer";
@@ -1062,42 +1062,42 @@ function Z(b, c) {
             ((b =
               (G
                 ? (G >= M.length - 1 ? "Game complete !\r" : "Victory !\r") +
-                  "\rStage " +
-                  (G + 1) +
-                  " cleared !  " +
-                  (3 == L
-                    ? B[G] <= N[G]
-                      ? "Incredible !"
-                      : "Impressive !"
-                    : 2 == L
+                "\rStage " +
+                (G + 1) +
+                " cleared !  " +
+                (3 == L
+                  ? B[G] <= N[G]
+                    ? "Incredible !"
+                    : "Impressive !"
+                  : 2 == L
                     ? "Excellent !"
                     : "Good Job.") +
-                  "\r" +
-                  (A / 2 > (G ? N[G - 1] : 0)
-                    ? "Turns " +
-                      parseInt(A / 2 - (G ? N[G - 1] : 0)) +
-                      " (|minimum " +
-                      (G ? N[G] - N[G - 1] : N[0]) +
-                      "|)"
-                    : "") +
-                  "\rFrags " +
-                  y +
-                  " (|" +
-                  L +
-                  " unit" +
-                  (1 < L ? "s" : "") +
-                  " alive, casualt" +
-                  (1 == L ? "ies " : "y ") +
-                  (3 - L) +
-                  "|)   "
+                "\r" +
+                (A / 2 > (G ? N[G - 1] : 0)
+                  ? "Turns " +
+                  parseInt(A / 2 - (G ? N[G - 1] : 0)) +
+                  " (|minimum " +
+                  (G ? N[G] - N[G - 1] : N[0]) +
+                  "|)"
+                  : "") +
+                "\rFrags " +
+                y +
+                " (|" +
+                L +
+                " unit" +
+                (1 < L ? "s" : "") +
+                " alive, casualt" +
+                (1 == L ? "ies " : "y ") +
+                (3 - L) +
+                "|)   "
                 : "Tutorial complete|!\r\rTo get bonus, clear every stage\rperfectly with minimum moves possible.\rGood Luck!") +
               "\r\r" +
               (1 < L
                 ? " +|" +
-                  ((B[G] <= N[G] ? 50 : 0) + (3 <= L ? 50 : 2 == L ? 25 : 0)) +
-                  " pts.||bonus !"
+                ((B[G] <= N[G] ? 50 : 0) + (3 <= L ? 50 : 2 == L ? 25 : 0)) +
+                " pts.||bonus !"
                 : "no bonus.")),
-            $a(b, a));
+              $a(b, a));
           if (!O[G]) O[G] = 0;
           if (
             parseInt(O[G]) < L ||
@@ -1152,10 +1152,10 @@ function Ja(b) {
   -1 < "jla".indexOf(b)
     ? (c += -1)
     : -1 < "krs".indexOf(b)
-    ? ((c += 1), (d = "right"), (e = "left"))
-    : -1 < "itw".indexOf(b)
-    ? ((a += -1), (d = "top"), (e = "bottom"))
-    : ((a += 1), (d = "bottom"), (e = "top"));
+      ? ((c += 1), (d = "right"), (e = "left"))
+      : -1 < "itw".indexOf(b)
+        ? ((a += -1), (d = "top"), (e = "bottom"))
+        : ((a += 1), (d = "bottom"), (e = "top"));
   switch (b) {
     case "j":
     case "k":
@@ -1215,8 +1215,8 @@ function cb() {
         if (((P[c][a] = 0), nb(q[c][a], "top"), 0 < c))
           1 == P[c - 1][a] && ((P[c][a] = 1), U.m(), nb(q[c - 1][a], "bottom")),
             3 < P[c - 1][a] &&
-              8 > P[c - 1][a] &&
-              (U.h(36), U.e(), y++, nb(q[c - 1][a], "center")),
+            8 > P[c - 1][a] &&
+            (U.h(36), U.e(), y++, nb(q[c - 1][a], "center")),
             (P[c - 1][a] = 2);
         else {
           if (1 == P[m - 1][a]) P[0][a] = 1;
@@ -1224,8 +1224,8 @@ function cb() {
             1 == P[m - 2][a]
               ? ((P[0][a] = 1), (b[m - 2][a] = 2))
               : 2 == P[m - 2][a] &&
-                1 >= P[m - 3][a] &&
-                ((P[0][a] = 1), (b[m - 3][a] = 2));
+              1 >= P[m - 3][a] &&
+              ((P[0][a] = 1), (b[m - 3][a] = 2));
           b[m - 1][a] = 3;
         }
       if ((4 == P[c][a] && "opp" == z) || (5 == P[c][a] && "foes" == z)) {
@@ -1236,8 +1236,8 @@ function cb() {
         if (0 < a)
           P[c][a - 1] == e && ((P[c][a] = e), U.m(), nb(q[c][a - 1], "right")),
             0 < P[c][a - 1] &&
-              4 > P[c][a - 1] &&
-              (U.w(), U.e(), nb(q[c][a - 1], "center")),
+            4 > P[c][a - 1] &&
+            (U.w(), U.e(), nb(q[c][a - 1], "center")),
             (P[c][a - 1] = d);
         else if (5 == d) b[c][k - 1] = 6;
         else {
@@ -1289,12 +1289,12 @@ function $a(b, c, a, d) {
   mess.style.height = T.j(messtxt, "height") + (c ? 60 : -40) + "px";
   c
     ? ((h.id = c
-        .split("|")
-        .join("")
-        .split("!")
-        .join("")
-        .replace(/\s/g, "")
-        .toLowerCase()),
+      .split("|")
+      .join("")
+      .split("!")
+      .join("")
+      .replace(/\s/g, "")
+      .toLowerCase()),
       "nextstage" == h.id ? U.C() : "prepare" == h.id ? U.i() : U.v(),
       S.c(h, c, 5),
       T.b(fade, E, { alpha: 0.75 }))
@@ -1348,9 +1348,9 @@ function Za(b, c) {
       (c
         ? "> >||  get ready !!!  ||< <|<"
         : d[a.indexOf(z)] +
-          d[a.indexOf(z) + 1] +
-          d[a.indexOf(z) + 2] +
-          d[a.indexOf(z) + 3])
+        d[a.indexOf(z) + 1] +
+        d[a.indexOf(z) + 2] +
+        d[a.indexOf(z) + 3])
     ).toUpperCase() + "=",
     2
   );
@@ -1360,10 +1360,10 @@ function hb() {
     c = O[G];
   n &&
     (2 != p && Q("m", p),
-    5 != E && Q("a", E),
-    Q("l" + b, c),
-    Q("l", -1 == G ? 0 : b + 1.5),
-    window.location.reload());
+      5 != E && Q("a", E),
+      Q("l" + b, c),
+      Q("l", -1 == G ? 0 : b + 1.5),
+      window.location.reload());
 }
 function Q(b, c) {
   n && window.history.replaceState("", "", pb(b, c));
@@ -1405,7 +1405,7 @@ function Y(b, c) {
   function a() {
     F &&
       ((e = parseInt(performance.now())),
-      e - d < c ? window.requestAnimationFrame(a) : b());
+        e - d < c ? window.requestAnimationFrame(a) : b());
   }
   var d = parseInt(performance.now()),
     e;
@@ -1419,128 +1419,128 @@ var qb = (function (b) {
   b.parentNode && b.parentNode.removeChild(b);
 });
 function X(b) {
-  for (; b.firstChild; ) qb(b.firstChild);
+  for (; b.firstChild;) qb(b.firstChild);
 }
 var U = (function () {
-    function b(b, g, l, C, fa, sa) {
-      function e() {
-        ha.stop();
-      }
-      var ha = c.createOscillator();
-      ha.frequency.value = b;
-      ha.type = a[sa || 0];
-      var Ea = c.createGain();
-      Ea.gain.value = 0;
-      ha.connect(Ea);
-      Ea.connect(c.destination);
-      ha.start();
-      var Fa = 0,
-        x = setInterval(function () {
-          ha.frequency.value = b + g * Fa;
-          Ea.gain.value = (1 - Fa / C) * fa * d;
-          Fa++;
-          Fa > C && (clearInterval(x), setTimeout(e, 2 * (l + C)));
-        }, l);
+  function b(b, g, l, C, fa, sa) {
+    function e() {
+      ha.stop();
     }
-    var c = new (window.AudioContext || window.webkitAudioContext)(),
-      a = ["square", "sawtooth", "triangle", "sine"],
-      d = 1;
-    return {
-      I: b,
-      G: function () {
-        return _volume;
-      },
-      J: function (a) {
-        d = a;
-      },
-      A: function () {
-        b(-120, 25, 25, 30, 0.01 * p, 1);
-        b(240, -45, 35, 20, 0.02 * p, 2);
+    var ha = c.createOscillator();
+    ha.frequency.value = b;
+    ha.type = a[sa || 0];
+    var Ea = c.createGain();
+    Ea.gain.value = 0;
+    ha.connect(Ea);
+    Ea.connect(c.destination);
+    ha.start();
+    var Fa = 0,
+      x = setInterval(function () {
+        ha.frequency.value = b + g * Fa;
+        Ea.gain.value = (1 - Fa / C) * fa * d;
+        Fa++;
+        Fa > C && (clearInterval(x), setTimeout(e, 2 * (l + C)));
+      }, l);
+  }
+  var c = new (window.AudioContext || window.webkitAudioContext)(),
+    a = ["square", "sawtooth", "triangle", "sine"],
+    d = 1;
+  return {
+    I: b,
+    G: function () {
+      return _volume;
+    },
+    J: function (a) {
+      d = a;
+    },
+    A: function () {
+      b(-120, 25, 25, 30, 0.01 * p, 1);
+      b(240, -45, 35, 20, 0.02 * p, 2);
+      setTimeout(function () {
+        b(45, 50, 25, 25, 0.02 * p, 2);
+      }, 150);
+      setTimeout(function () {
+        b(25, 40, 35, 18, 0.01 * p, 2);
+      }, 260);
+    },
+    i: function () {
+      b(420, 6, 15, 10, 0.01 * p, 3);
+    },
+    x: function () {
+      b(100, -2, 5, 15, 0.01 * p, 1);
+      b(100, -15, 15, 15, 0.05 * p, 2);
+    },
+    e: function () {
+      b(100, -5, 20, 15, 0.01 * p, 1);
+      b(100, -5, 25, 25, 0.1 * p, 3);
+    },
+    v: function () {
+      function a(a) {
         setTimeout(function () {
-          b(45, 50, 25, 25, 0.02 * p, 2);
-        }, 150);
+          b(150 - 0.75 * a, -15, 15, 10, (0.03 - a / 1e4) * p, 2);
+          b(320, 5, 15, 5, (0.04 - a / 8e3) * p, 3);
+        }, a);
+      }
+      a(10);
+      a(140);
+      a(280);
+    },
+    C: function () {
+      function c(c, d, e, g) {
         setTimeout(function () {
-          b(25, 40, 35, 18, 0.01 * p, 2);
-        }, 260);
-      },
-      i: function () {
-        b(420, 6, 15, 10, 0.01 * p, 3);
-      },
-      x: function () {
-        b(100, -2, 5, 15, 0.01 * p, 1);
-        b(100, -15, 15, 15, 0.05 * p, 2);
-      },
-      e: function () {
-        b(100, -5, 20, 15, 0.01 * p, 1);
-        b(100, -5, 25, 25, 0.1 * p, 3);
-      },
-      v: function () {
-        function a(a) {
-          setTimeout(function () {
-            b(150 - 0.75 * a, -15, 15, 10, (0.03 - a / 1e4) * p, 2);
-            b(320, 5, 15, 5, (0.04 - a / 8e3) * p, 3);
-          }, a);
-        }
-        a(10);
-        a(140);
-        a(280);
-      },
-      C: function () {
-        function c(c, d, e, g) {
-          setTimeout(function () {
-            b(d, 0, e, g, 0.02 * p, 2);
-            b(d, 0, e, g, 0.02 * p, 3);
-            b(2 * d, 0, e, g / 2, 0.003 * p);
-            b(2 * d, 0, e, g / 2, 0.005 * p, 1);
-          }, c);
-        }
-        c(5, 150, 20, 12);
-        c(140, 150, 20, 12);
-        c(280, 150, 20, 12);
-        c(400, 198, 20, 15);
-        c(675, 178, 25, 12);
-        c(780, 198, 50, 20);
-      },
-      h: function (a) {
-        function c(c) {
-          setTimeout(function () {
-            b(100, a, 15, 15, (0.06 - c / 8e3) * p, 3);
-          }, c);
-        }
-        b(125, a, 15, 25, 0.01 * p, 1);
-        c(50);
-        c(140);
-        c(230);
-        c(320);
-        c(400);
-      },
-      o: function () {
-        function a() {
-          b(100, -2, 10, 25, 0.2 * p, 2);
-        }
-        a();
-        setTimeout(a, 120);
-        setTimeout(a, 220);
+          b(d, 0, e, g, 0.02 * p, 2);
+          b(d, 0, e, g, 0.02 * p, 3);
+          b(2 * d, 0, e, g / 2, 0.003 * p);
+          b(2 * d, 0, e, g / 2, 0.005 * p, 1);
+        }, c);
+      }
+      c(5, 150, 20, 12);
+      c(140, 150, 20, 12);
+      c(280, 150, 20, 12);
+      c(400, 198, 20, 15);
+      c(675, 178, 25, 12);
+      c(780, 198, 50, 20);
+    },
+    h: function (a) {
+      function c(c) {
         setTimeout(function () {
-          b(92, -2, 15, 25, 0.2 * p, 2);
-        }, 340);
-      },
-      w: function () {
-        setTimeout(function () {
-          b(100, -2, 10, 25, 0.1 * p, 2);
-        }, 180);
-        setTimeout(function () {
-          b(120, -5, 15, 25, 0.1 * p, 2);
-        }, 60);
-        b(110, -10, 20, 15, 0.01 * p);
-      },
-      m: function () {
-        b(160, 20, 25, 25, 0.01 * p, 3);
-        b(200, 40, 25, 15, 0.01 * p, 2);
-        b(160, 40, 20, 20, 0.01 * p, 1);
-      },
-    };
-  })(),
+          b(100, a, 15, 15, (0.06 - c / 8e3) * p, 3);
+        }, c);
+      }
+      b(125, a, 15, 25, 0.01 * p, 1);
+      c(50);
+      c(140);
+      c(230);
+      c(320);
+      c(400);
+    },
+    o: function () {
+      function a() {
+        b(100, -2, 10, 25, 0.2 * p, 2);
+      }
+      a();
+      setTimeout(a, 120);
+      setTimeout(a, 220);
+      setTimeout(function () {
+        b(92, -2, 15, 25, 0.2 * p, 2);
+      }, 340);
+    },
+    w: function () {
+      setTimeout(function () {
+        b(100, -2, 10, 25, 0.1 * p, 2);
+      }, 180);
+      setTimeout(function () {
+        b(120, -5, 15, 25, 0.1 * p, 2);
+      }, 60);
+      b(110, -10, 20, 15, 0.01 * p);
+    },
+    m: function () {
+      b(160, 20, 25, 25, 0.01 * p, 3);
+      b(200, 40, 25, 15, 0.01 * p, 2);
+      b(160, 40, 20, 20, 0.01 * p, 1);
+    },
+  };
+})(),
   S = (function () {
     function b(a, b, e, g) {
       parseInt(b) || (b = b.charCodeAt(0));
@@ -1572,564 +1572,564 @@ var U = (function () {
             b.fill();
     }
     var a = [
-        [
-          [, , , 5],
-          [, 6],
-        ],
-        [],
-        [],
-        [[, 2, 2], [2, 1], [3], [4, , , 7], [3, 6], [2, 5], [, 4, 2], [, 3]],
-        [],
-        [],
-        [[, , , 2]],
-        [[, 2, , 3], [1, 1], [1, 5], [2], [2, 6]],
-        [[2, 2, , 3], [1, 1], [1, 5], [], [, 6]],
-        [
-          [, 2],
-          [, 4],
-          [1, 3, 3],
-          [2, 1, , 5],
-          [4, 2],
-          [4, 4],
-        ],
-        [
-          [, 3, 5],
-          [2, 1, , 5],
-        ],
-        [
-          [1, 6, , 2],
-          [, 8],
-        ],
-        [[, 3, 5]],
-        [[, 6]],
-        [],
-        [
-          [1, , 3],
-          [, 1, , 5],
-          [1, 6, 3],
-          [4, 1, , 5],
-          [1, 4],
-          [2, 3],
-          [3, 2],
-        ],
-        [
-          [1, 1],
-          [2, , , 6],
-          [1, 6, 3],
-        ],
-        [
-          [, 1],
-          [1, , 3],
-          [4, 1, , 2],
-          [3, 3],
-          [2, 4],
-          [1, 5],
-          [, 6, 5],
-        ],
-        [
-          [, 1],
-          [1, , 3],
-          [4, 1, , 2],
-          [4, 4, , 2],
-          [, 5],
-          [1, 6, 3],
-          [2, 3, 2],
-        ],
-        [
-          [, 3],
-          [1, 2],
-          [2, 1],
-          [, 4, 5],
-          [3, , , 7],
-        ],
-        [
-          [, , 5],
-          [, 1],
-          [, 2, 4],
-          [4, 3, , 3],
-          [, 5],
-          [1, 6, 3],
-        ],
-        [
-          [1, , 3],
-          [4, 1],
-          [, 1, , 5],
-          [1, 6, 3],
-          [1, 3, 3],
-          [4, 4, , 2],
-        ],
-        [
-          [, , 5],
-          [4, 1, , 2],
-          [3, 3, , 2],
-          [2, 5, , 2],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 2],
-          [4, 1, , 2],
-          [, 4, , 2],
-          [4, 4, , 2],
-          [1, 3, 3],
-          [1, 6, 3],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 2],
-          [1, 3, 3],
-          [4, 1, , 5],
-          [1, 6, 3],
-          [, 5],
-        ],
-        [
-          [, 1],
-          [1, 2],
-          [2, 3],
-          [3, 5],
-          [3, 4, 2],
-          [5, , 3],
-          [5, 1, 3],
-          [5, -1],
-          [9, 5],
-          [5, 3, 5],
-          [6, 4, 3],
-          [6, 5, 3],
-          [5, 6],
-          [7, 6, 2],
-          [4, 7, 2],
-          [8, 7, 3],
-        ],
-        [],
-        [
-          [4, 3],
-          [5, 2],
-          [5, 4],
-          [6, 1],
-          [6, 5],
-        ],
-        [
-          [1, -1, 3],
-          [],
-          [4, , 2],
-          [6, 1, 2],
-          [7, 2, 2],
-          [10, 2, , 2],
-          [8, 4, 3],
-          [11, 5],
-          [11, 7],
-          [1, 3, , 2],
-          [, 2],
-          [2, 3],
-          [3, 5],
-          [4, 6, 2],
-          [6, 7, 2],
-          [8, 8, 3],
-        ],
-        [
-          [6, 3],
-          [5, 2],
-          [5, 4],
-          [4, 1],
-          [4, 5],
-        ],
-        [
-          [, 1],
-          [1, , 3],
-          [4, 1, , 2],
-          [3, 3],
-          [2, 4],
-          [2, 6],
-        ],
-        [
-          [2, , 4],
-          [, 2, , 4],
-          [7, 2, , 4],
-          [2, 7, 4],
-          [3, 2, 2],
-          [2, 3, , 2],
-          [3, 5, 2],
-          [1, 1],
-          [6, 1],
-          [1, 6],
-          [6, 6],
-        ],
-        [
-          [, 1, , 6],
-          [4, 1, , 6],
-          [1, , 3],
-          [, 3, 4],
-        ],
-        [
-          [, , 4],
-          [, , , 7],
-          [, 3, 4],
-          [, 6, 4],
-          [4, 1, , 2],
-          [4, 4, , 2],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 5],
-          [1, 6, 3],
-          [4, 5],
-          [4, 1],
-        ],
-        [
-          [, , , 7],
-          [, , 4],
-          [, 6, 4],
-          [4, 1, , 5],
-        ],
-        [
-          [, , 5],
-          [, 3, 4],
-          [, 6, 5],
-          [, , , 7],
-        ],
-        [
-          [, , 5],
-          [, 3, 4],
-          [, , , 7],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 5],
-          [1, 6, 3],
-          [4, 5],
-          [3, 4, 2],
-          [4, 1],
-        ],
-        [
-          [, , , 7],
-          [4, , , 7],
-          [1, 3, 3],
-        ],
-        [
-          [, , 3],
-          [, 6, 3],
-          [1, 1, , 5],
-        ],
-        [
-          [4, , , 6],
-          [1, 6, 3],
-          [, 5],
-        ],
-        [[, , , 7], [1, 3], [2, 2], [2, 4], [3, 1], [4], [3, 5], [4, 6]],
-        [
-          [, , , 7],
-          [1, 6, 4],
-        ],
-        [
-          [, , , 7],
-          [1, 2],
-          [3, 2],
-          [2, 3],
-          [4, , , 7],
-        ],
-        [
-          [, , , 7],
-          [1, 2],
-          [2, 3],
-          [3, 4],
-          [4, , , 7],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 5],
-          [1, 6, 3],
-          [4, 1, , 5],
-        ],
-        [
-          [, , , 7],
-          [, , 4],
-          [, 3, 4],
-          [4, 1, , 2],
-        ],
-        [
-          [1, , 3],
-          [, 1, , 5],
-          [1, 6, 3],
-          [4, 1, , 5],
-          [4, 7],
-        ],
-        [
-          [, , , 7],
-          [, , 4],
-          [, 3, 4],
-          [4, 1, , 2],
-          [4, 4, , 3],
-        ],
-        [
-          [1, , 4],
-          [, 1, , 2],
-          [1, 3, 3],
-          [4, 4, , 2],
-          [, 6, 4],
-        ],
-        [
-          [, , 5],
-          [2, , , 7],
-        ],
-        [
-          [, , , 6],
-          [1, 6, 3],
-          [4, , , 6],
-        ],
-        [
-          [, , , 3],
-          [4, , , 3],
-          [1, 3, , 2],
-          [3, 3, , 2],
-          [2, 5, , 2],
-        ],
-        [
-          [, , , 7],
-          [1, 5],
-          [2, 4],
-          [3, 5],
-          [4, , , 7],
-        ],
-        [
-          [, , , 2],
-          [4, , , 2],
-          [, 5, , 2],
-          [4, 5, , 2],
-          [1, 2],
-          [3, 2],
-          [2, 3],
-          [1, 4],
-          [3, 4],
-        ],
-        [
-          [, , , 2],
-          [4, , , 2],
-          [1, 2],
-          [3, 2],
-          [2, 3, , 4],
-        ],
-        [
-          [, , 5],
-          [, 6, 5],
-          [, 5],
-          [1, 4],
-          [2, 3],
-          [3, 2],
-          [4, 1],
-        ],
-        [
-          [4, , 3],
-          [4, 1, 3],
-          [5, -1],
-          [8, 2, 3],
-          [0, 2],
-          [1, 3],
-          [8, 4, 3],
-          [9, 5],
-          [2, 4],
-          [3, 3, 8],
-          [4, 4, 3],
-          [4, 5, 3],
-          [3, 6],
-          [7, 6],
-          [2, 7, 2],
-          [7, 7, 2],
-        ],
-        [],
-        [],
-        [
-          [3, 4],
-          [4, 3],
-          [5, 2],
-          [6, 3],
-          [7, 4],
-        ],
-        [
-          [5, 7, 2],
-          [6, 6],
-          [9, 3, 2],
-          [8, 4, 2],
-          [7, 5, 4],
-          [8, 6, 2],
-          [9, 7, 2],
-          [1, 7, 2],
-          [3, 6, 2],
-          [5, 5],
-          [6, 4],
-          [7, 2, , 2],
-          [8, , , 3],
-          [10, 2],
-          [, 4, 3],
-          [1, 3, 2],
-          [1, 2, 2],
-          [5, -1],
-          [7, -1, , 2],
-          [3],
-        ],
-        [
-          [3, 2],
-          [4, 3],
-          [5, 4],
-          [6, 3],
-          [7, 2],
-        ],
-        [
-          [1, 2, 2],
-          [1, 4, 2],
-          [1, 6, 2],
-          [, 5],
-          [3, 3, , 4],
-        ],
-        [
-          [, , , 7],
-          [, 2, 3],
-          [, 6, 3],
-          [3, 3, , 3],
-        ],
-        [
-          [, 3, , 3],
-          [1, 2, 2],
-          [1, 6, 2],
-          [3, 3],
-          [3, 5],
-        ],
-        [
-          [3, , , 7],
-          [1, 2, 2],
-          [1, 6, 2],
-          [, 3, , 3],
-        ],
-        [
-          [1, 2, 2],
-          [, 3, , 3],
-          [1, 6, 2],
-          [3, 3],
-          [, 4, 4],
-        ],
-        [[1, 1, , 6], [, 3, 3], [2]],
-        [
-          [1, 2, 2],
-          [, 3, , 3],
-          [1, 6, 2],
-          [3, 2, , 6],
-          [1, 8, 2],
-        ],
-        [
-          [, , , 7],
-          [, 2, 3],
-          [3, 3, , 4],
-        ],
-        [[1, 2, , 5], [1], [, 2]],
-        [[1, 2, , 5], [1], [, 2], [, 7]],
-        [
-          [, , , 7],
-          [1, 4],
-          [2, 3],
-          [2, 5],
-          [3, 2],
-          [3, 6],
-        ],
-        [
-          [, , , 6],
-          [1, 6],
-        ],
-        [
-          [, 2, , 5],
-          [2, 3, , 4],
-          [4, 3, , 4],
-          [, 2, 4],
-        ],
-        [
-          [, 2, , 5],
-          [3, 3, , 4],
-          [, 2, 3],
-        ],
-        [
-          [1, 2, 2],
-          [, 3, , 3],
-          [1, 6, 2],
-          [3, 3, , 3],
-        ],
-        [
-          [, 2, 3],
-          [, 2, , 7],
-          [, 6, 3],
-          [3, 3, , 3],
-        ],
-        [
-          [1, 2, 2],
-          [3, 2, , 7],
-          [1, 6, 2],
-          [, 3, , 3],
-        ],
-        [
-          [, 2, , 5],
-          [1, 3],
-          [2, 2, 2],
-        ],
-        [
-          [1, 2, 3],
-          [1, 4, 2],
-          [, 6, 3],
-          [, 3],
-          [3, 5],
-        ],
-        [
-          [1, , , 6],
-          [, 2, 3],
-          [2, 6],
-        ],
-        [
-          [, 2, , 4],
-          [1, 6, 2],
-          [3, 2, , 4],
-        ],
-        [
-          [, 2, , 5],
-          [3, 2, , 3],
-          [1, 6],
-          [2, 5],
-        ],
-        [
-          [, 2, , 4],
-          [2, 2, , 4],
-          [4, 2, , 4],
-          [1, 6],
-          [3, 6],
-        ],
-        [
-          [, 2, , 2],
-          [1, 4, 2],
-          [3, 2, , 2],
-          [, 5, , 2],
-          [3, 5, , 2],
-        ],
-        [
-          [, 2, , 4],
-          [1, 6, 2],
-          [3, 2, , 6],
-          [1, 8, 2],
-        ],
-        [
-          [, 2, 4],
-          [3, 3],
-          [1, 4, 2],
-          [, 5],
-          [, 6, 4],
-        ],
-        [
-          [, 2],
-          [1, 3],
-          [2, 4],
-          [, 4],
-          [2, 2],
-        ],
-        [],
-        [
-          [2, 2, , 3],
-          [1, 1],
-          [1, 5],
-        ],
+      [
+        [, , , 5],
+        [, 6],
       ],
+      [],
+      [],
+      [[, 2, 2], [2, 1], [3], [4, , , 7], [3, 6], [2, 5], [, 4, 2], [, 3]],
+      [],
+      [],
+      [[, , , 2]],
+      [[, 2, , 3], [1, 1], [1, 5], [2], [2, 6]],
+      [[2, 2, , 3], [1, 1], [1, 5], [], [, 6]],
+      [
+        [, 2],
+        [, 4],
+        [1, 3, 3],
+        [2, 1, , 5],
+        [4, 2],
+        [4, 4],
+      ],
+      [
+        [, 3, 5],
+        [2, 1, , 5],
+      ],
+      [
+        [1, 6, , 2],
+        [, 8],
+      ],
+      [[, 3, 5]],
+      [[, 6]],
+      [],
+      [
+        [1, , 3],
+        [, 1, , 5],
+        [1, 6, 3],
+        [4, 1, , 5],
+        [1, 4],
+        [2, 3],
+        [3, 2],
+      ],
+      [
+        [1, 1],
+        [2, , , 6],
+        [1, 6, 3],
+      ],
+      [
+        [, 1],
+        [1, , 3],
+        [4, 1, , 2],
+        [3, 3],
+        [2, 4],
+        [1, 5],
+        [, 6, 5],
+      ],
+      [
+        [, 1],
+        [1, , 3],
+        [4, 1, , 2],
+        [4, 4, , 2],
+        [, 5],
+        [1, 6, 3],
+        [2, 3, 2],
+      ],
+      [
+        [, 3],
+        [1, 2],
+        [2, 1],
+        [, 4, 5],
+        [3, , , 7],
+      ],
+      [
+        [, , 5],
+        [, 1],
+        [, 2, 4],
+        [4, 3, , 3],
+        [, 5],
+        [1, 6, 3],
+      ],
+      [
+        [1, , 3],
+        [4, 1],
+        [, 1, , 5],
+        [1, 6, 3],
+        [1, 3, 3],
+        [4, 4, , 2],
+      ],
+      [
+        [, , 5],
+        [4, 1, , 2],
+        [3, 3, , 2],
+        [2, 5, , 2],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 2],
+        [4, 1, , 2],
+        [, 4, , 2],
+        [4, 4, , 2],
+        [1, 3, 3],
+        [1, 6, 3],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 2],
+        [1, 3, 3],
+        [4, 1, , 5],
+        [1, 6, 3],
+        [, 5],
+      ],
+      [
+        [, 1],
+        [1, 2],
+        [2, 3],
+        [3, 5],
+        [3, 4, 2],
+        [5, , 3],
+        [5, 1, 3],
+        [5, -1],
+        [9, 5],
+        [5, 3, 5],
+        [6, 4, 3],
+        [6, 5, 3],
+        [5, 6],
+        [7, 6, 2],
+        [4, 7, 2],
+        [8, 7, 3],
+      ],
+      [],
+      [
+        [4, 3],
+        [5, 2],
+        [5, 4],
+        [6, 1],
+        [6, 5],
+      ],
+      [
+        [1, -1, 3],
+        [],
+        [4, , 2],
+        [6, 1, 2],
+        [7, 2, 2],
+        [10, 2, , 2],
+        [8, 4, 3],
+        [11, 5],
+        [11, 7],
+        [1, 3, , 2],
+        [, 2],
+        [2, 3],
+        [3, 5],
+        [4, 6, 2],
+        [6, 7, 2],
+        [8, 8, 3],
+      ],
+      [
+        [6, 3],
+        [5, 2],
+        [5, 4],
+        [4, 1],
+        [4, 5],
+      ],
+      [
+        [, 1],
+        [1, , 3],
+        [4, 1, , 2],
+        [3, 3],
+        [2, 4],
+        [2, 6],
+      ],
+      [
+        [2, , 4],
+        [, 2, , 4],
+        [7, 2, , 4],
+        [2, 7, 4],
+        [3, 2, 2],
+        [2, 3, , 2],
+        [3, 5, 2],
+        [1, 1],
+        [6, 1],
+        [1, 6],
+        [6, 6],
+      ],
+      [
+        [, 1, , 6],
+        [4, 1, , 6],
+        [1, , 3],
+        [, 3, 4],
+      ],
+      [
+        [, , 4],
+        [, , , 7],
+        [, 3, 4],
+        [, 6, 4],
+        [4, 1, , 2],
+        [4, 4, , 2],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 5],
+        [1, 6, 3],
+        [4, 5],
+        [4, 1],
+      ],
+      [
+        [, , , 7],
+        [, , 4],
+        [, 6, 4],
+        [4, 1, , 5],
+      ],
+      [
+        [, , 5],
+        [, 3, 4],
+        [, 6, 5],
+        [, , , 7],
+      ],
+      [
+        [, , 5],
+        [, 3, 4],
+        [, , , 7],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 5],
+        [1, 6, 3],
+        [4, 5],
+        [3, 4, 2],
+        [4, 1],
+      ],
+      [
+        [, , , 7],
+        [4, , , 7],
+        [1, 3, 3],
+      ],
+      [
+        [, , 3],
+        [, 6, 3],
+        [1, 1, , 5],
+      ],
+      [
+        [4, , , 6],
+        [1, 6, 3],
+        [, 5],
+      ],
+      [[, , , 7], [1, 3], [2, 2], [2, 4], [3, 1], [4], [3, 5], [4, 6]],
+      [
+        [, , , 7],
+        [1, 6, 4],
+      ],
+      [
+        [, , , 7],
+        [1, 2],
+        [3, 2],
+        [2, 3],
+        [4, , , 7],
+      ],
+      [
+        [, , , 7],
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [4, , , 7],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 5],
+        [1, 6, 3],
+        [4, 1, , 5],
+      ],
+      [
+        [, , , 7],
+        [, , 4],
+        [, 3, 4],
+        [4, 1, , 2],
+      ],
+      [
+        [1, , 3],
+        [, 1, , 5],
+        [1, 6, 3],
+        [4, 1, , 5],
+        [4, 7],
+      ],
+      [
+        [, , , 7],
+        [, , 4],
+        [, 3, 4],
+        [4, 1, , 2],
+        [4, 4, , 3],
+      ],
+      [
+        [1, , 4],
+        [, 1, , 2],
+        [1, 3, 3],
+        [4, 4, , 2],
+        [, 6, 4],
+      ],
+      [
+        [, , 5],
+        [2, , , 7],
+      ],
+      [
+        [, , , 6],
+        [1, 6, 3],
+        [4, , , 6],
+      ],
+      [
+        [, , , 3],
+        [4, , , 3],
+        [1, 3, , 2],
+        [3, 3, , 2],
+        [2, 5, , 2],
+      ],
+      [
+        [, , , 7],
+        [1, 5],
+        [2, 4],
+        [3, 5],
+        [4, , , 7],
+      ],
+      [
+        [, , , 2],
+        [4, , , 2],
+        [, 5, , 2],
+        [4, 5, , 2],
+        [1, 2],
+        [3, 2],
+        [2, 3],
+        [1, 4],
+        [3, 4],
+      ],
+      [
+        [, , , 2],
+        [4, , , 2],
+        [1, 2],
+        [3, 2],
+        [2, 3, , 4],
+      ],
+      [
+        [, , 5],
+        [, 6, 5],
+        [, 5],
+        [1, 4],
+        [2, 3],
+        [3, 2],
+        [4, 1],
+      ],
+      [
+        [4, , 3],
+        [4, 1, 3],
+        [5, -1],
+        [8, 2, 3],
+        [0, 2],
+        [1, 3],
+        [8, 4, 3],
+        [9, 5],
+        [2, 4],
+        [3, 3, 8],
+        [4, 4, 3],
+        [4, 5, 3],
+        [3, 6],
+        [7, 6],
+        [2, 7, 2],
+        [7, 7, 2],
+      ],
+      [],
+      [],
+      [
+        [3, 4],
+        [4, 3],
+        [5, 2],
+        [6, 3],
+        [7, 4],
+      ],
+      [
+        [5, 7, 2],
+        [6, 6],
+        [9, 3, 2],
+        [8, 4, 2],
+        [7, 5, 4],
+        [8, 6, 2],
+        [9, 7, 2],
+        [1, 7, 2],
+        [3, 6, 2],
+        [5, 5],
+        [6, 4],
+        [7, 2, , 2],
+        [8, , , 3],
+        [10, 2],
+        [, 4, 3],
+        [1, 3, 2],
+        [1, 2, 2],
+        [5, -1],
+        [7, -1, , 2],
+        [3],
+      ],
+      [
+        [3, 2],
+        [4, 3],
+        [5, 4],
+        [6, 3],
+        [7, 2],
+      ],
+      [
+        [1, 2, 2],
+        [1, 4, 2],
+        [1, 6, 2],
+        [, 5],
+        [3, 3, , 4],
+      ],
+      [
+        [, , , 7],
+        [, 2, 3],
+        [, 6, 3],
+        [3, 3, , 3],
+      ],
+      [
+        [, 3, , 3],
+        [1, 2, 2],
+        [1, 6, 2],
+        [3, 3],
+        [3, 5],
+      ],
+      [
+        [3, , , 7],
+        [1, 2, 2],
+        [1, 6, 2],
+        [, 3, , 3],
+      ],
+      [
+        [1, 2, 2],
+        [, 3, , 3],
+        [1, 6, 2],
+        [3, 3],
+        [, 4, 4],
+      ],
+      [[1, 1, , 6], [, 3, 3], [2]],
+      [
+        [1, 2, 2],
+        [, 3, , 3],
+        [1, 6, 2],
+        [3, 2, , 6],
+        [1, 8, 2],
+      ],
+      [
+        [, , , 7],
+        [, 2, 3],
+        [3, 3, , 4],
+      ],
+      [[1, 2, , 5], [1], [, 2]],
+      [[1, 2, , 5], [1], [, 2], [, 7]],
+      [
+        [, , , 7],
+        [1, 4],
+        [2, 3],
+        [2, 5],
+        [3, 2],
+        [3, 6],
+      ],
+      [
+        [, , , 6],
+        [1, 6],
+      ],
+      [
+        [, 2, , 5],
+        [2, 3, , 4],
+        [4, 3, , 4],
+        [, 2, 4],
+      ],
+      [
+        [, 2, , 5],
+        [3, 3, , 4],
+        [, 2, 3],
+      ],
+      [
+        [1, 2, 2],
+        [, 3, , 3],
+        [1, 6, 2],
+        [3, 3, , 3],
+      ],
+      [
+        [, 2, 3],
+        [, 2, , 7],
+        [, 6, 3],
+        [3, 3, , 3],
+      ],
+      [
+        [1, 2, 2],
+        [3, 2, , 7],
+        [1, 6, 2],
+        [, 3, , 3],
+      ],
+      [
+        [, 2, , 5],
+        [1, 3],
+        [2, 2, 2],
+      ],
+      [
+        [1, 2, 3],
+        [1, 4, 2],
+        [, 6, 3],
+        [, 3],
+        [3, 5],
+      ],
+      [
+        [1, , , 6],
+        [, 2, 3],
+        [2, 6],
+      ],
+      [
+        [, 2, , 4],
+        [1, 6, 2],
+        [3, 2, , 4],
+      ],
+      [
+        [, 2, , 5],
+        [3, 2, , 3],
+        [1, 6],
+        [2, 5],
+      ],
+      [
+        [, 2, , 4],
+        [2, 2, , 4],
+        [4, 2, , 4],
+        [1, 6],
+        [3, 6],
+      ],
+      [
+        [, 2, , 2],
+        [1, 4, 2],
+        [3, 2, , 2],
+        [, 5, , 2],
+        [3, 5, , 2],
+      ],
+      [
+        [, 2, , 4],
+        [1, 6, 2],
+        [3, 2, , 6],
+        [1, 8, 2],
+      ],
+      [
+        [, 2, 4],
+        [3, 3],
+        [1, 4, 2],
+        [, 5],
+        [, 6, 4],
+      ],
+      [
+        [, 2],
+        [1, 3],
+        [2, 4],
+        [, 4],
+        [2, 2],
+      ],
+      [],
+      [
+        [2, 2, , 3],
+        [1, 1],
+        [1, 5],
+      ],
+    ],
       d = [],
       e,
       g,
@@ -2143,18 +2143,18 @@ var U = (function () {
       124 == e
         ? d.push(0)
         : 33 == e || 39 == e || 46 == e
-        ? d.push(1)
-        : -1 < [32, 44, 105, 106, 108].indexOf(e)
-        ? d.push(2)
-        : -1 < [40, 41, 73, 102, 116, 123, 125, 92].indexOf(e)
-        ? d.push(3)
-        : 96 < e && 109 != e && 119 != e
-        ? d.push(4)
-        : (90 < e && 97 > e && 92 != e) || (57 < e && 63 > e) || 38 == e
-        ? d.push(12)
-        : 64 == e
-        ? d.push(8)
-        : d.push(5);
+          ? d.push(1)
+          : -1 < [32, 44, 105, 106, 108].indexOf(e)
+            ? d.push(2)
+            : -1 < [40, 41, 73, 102, 116, 123, 125, 92].indexOf(e)
+              ? d.push(3)
+              : 96 < e && 109 != e && 119 != e
+                ? d.push(4)
+                : (90 < e && 97 > e && 92 != e) || (57 < e && 63 > e) || 38 == e
+                  ? d.push(12)
+                  : 64 == e
+                    ? d.push(8)
+                    : d.push(5);
     return {
       K: a,
       f: b,
@@ -2184,9 +2184,9 @@ var U = (function () {
             H[x].start == H[x].end
               ? (la = H[x].end)
               : ((J =
-                  H[x].start > H[x].end
-                    ? H[x].end + ((H[x].start - H[x].end) / d) * (d - ta)
-                    : H[x].start - ((H[x].start - H[x].end) / d) * ta),
+                H[x].start > H[x].end
+                  ? H[x].end + ((H[x].start - H[x].end) / d) * (d - ta)
+                  : H[x].start - ((H[x].start - H[x].end) / d) * ta),
                 (la = ta >= d ? H[x].end : J)),
               H[x].s != e[1] && (la += "px"),
               -1 < e.indexOf(H[x].s) && (b.style[H[x].s] = la);
@@ -2215,8 +2215,8 @@ var U = (function () {
             e[1] &&
             0 < sa[J] &&
             ("hidden" == b.style.visibility && (b.style.opacity = "0"),
-            (b.style.visibility = "visible")),
-          H.push({ s: la, start: c(b, la), end: sa[J] }));
+              (b.style.visibility = "visible")),
+            H.push({ s: la, start: c(b, la), end: sa[J] }));
       fa(b);
       H.length && (l.push(requestAnimationFrame(C)), g.push(b));
     }
